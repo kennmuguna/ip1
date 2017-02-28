@@ -1,0 +1,10 @@
+<h3>Current borrowers: (Amount to be returned including Interest)</h3> 
+
+<ul>
+    <% @loans.each() do |loan| %>
+      <div class="thumbnail">
+          <li><a href="/list"><%= loan.name() %></a> <br> Ksh.<a href="/list"><%= loan.loan() %></a></li>
+      </div>
+    <% end %>
+</ul>
+
